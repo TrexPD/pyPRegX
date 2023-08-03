@@ -1,6 +1,7 @@
 from title_regex import search_for_title_in_HTML
 from body_regex import search_for_body_in_HTML
 from head_regex import extract_the_head_from_HTML
+from links_regex import search_for_links_in_HTML
 
 
 class ParserRegex():
@@ -21,6 +22,12 @@ class ParserRegex():
         """
         return extract_the_head_from_HTML(self.content)
 
+    def links(self):
+        """
+        Extracting all the URLs found within a page's <a> tags.
+        """
+        return search_for_links_in_HTML(self.content)
+    
     def title(self):
         """
         returns the text inside the <title> tag.
@@ -30,4 +37,4 @@ class ParserRegex():
 
 if __name__ in "__main__":
     parser = ParserRegex(r"C:\Users\leyna\Desktop\meupdf.html")
-    print(parser.head())
+    print(parser.links())
