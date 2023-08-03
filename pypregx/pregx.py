@@ -1,4 +1,5 @@
-from pypregx.title_regex import search_for_title_in_HTML
+from title_regex import search_for_title_in_HTML
+from body_regex import search_for_body_in_HTML
 
 
 class ParserRegex():
@@ -7,8 +8,16 @@ class ParserRegex():
             self.content = file.read()
 
     def title(self):
+        """
+        returns the text inside the <title> tag.
+        """
         return search_for_title_in_HTML(self.content)
     
+    def body(self):
+        """
+        Returns document body.
+        """
+        return search_for_body_in_HTML(self.content)
 
 
 
