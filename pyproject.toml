@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "pypregx"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+version = "0.1.6"
+description = "A parser made entirely with regex to extract elements from HTML!"
+authors = ["Paulo Daniel <leynad157@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 
 
 [build-system]
