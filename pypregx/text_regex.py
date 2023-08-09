@@ -2,7 +2,7 @@ from re import compile, DOTALL, sub
 from html import unescape
 
 
-def extract_only_the_HTML_text(content_html: str, file_name: str = "text_extract.txt", save_file: bool = False) -> str | None:
+def extract_only_the_HTML_text(content_html: str, file_name: str, save_file: bool) -> str | None:
     """
     Removes all html tags and preserves only the text.
     """
