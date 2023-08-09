@@ -1,4 +1,4 @@
-# PyPregX
+# PyPregX [ALPHA]
 
 #### A parser made entirely with regex to extract elements from HTML!
 
@@ -17,7 +17,6 @@ print(parser.title())
 ```
 It's FOSS
 ```
-
 
 #### Methods:
 - **.body()**  = Returns document body.
